@@ -1,0 +1,12 @@
+.cubs-header, .cubs-div {
+  color:darkblue;
+  border-style:dashed;
+  border-color:red;
+}
+
+.sox-header, .sox-div {
+  color:white;
+  background-color:black;
+  border-style:dashed;
+  border-color:white;
+}

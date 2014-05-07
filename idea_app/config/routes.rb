@@ -1,9 +1,19 @@
 IdeaApp::Application.routes.draw do
+  
+  # Create
   get '/new_idea' => 'application#new'
   get '/create_idea' => 'application#create'
+
+  # Read
   get '/ideas/:id' => 'application#show'
+  get '/ideas' => 'application#index'
+  
+  # Update
   get '/edit_idea/:id' => 'application#edit'
   get '/update_idea/:id' => 'application#update'
+  
+  # Destroy
+  get '/ideas/:id/destroy' => 'application#destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

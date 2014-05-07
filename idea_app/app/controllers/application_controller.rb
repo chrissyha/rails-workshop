@@ -27,4 +27,14 @@ class ApplicationController < ActionController::Base
     idea.save
     redirect_to "/ideas/#{ idea.id }"
   end
+
+  def index
+    @ideas = Idea.all
+  end
+
+  def destroy
+    idea = Idea.find_by_id(params['id'])
+    idea.destroy
+    redirect_to "/ideas"
+  end
 end

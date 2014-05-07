@@ -1,19 +1,30 @@
 IdeaApp::Application.routes.draw do
   
+  resources :users
+
+  resources :ideas
+
   # Create
-  get '/new_idea' => 'application#new'
-  get '/create_idea' => 'application#create'
+  #get '/new_idea' => 'application#new'
+  #get '/ideas/new' => 'application#new'
+  #get '/create_idea' => 'application#create'
+  #get '/ideas/create' => 'application#create'
+  #post '/ideas' => 'application#create', as: 'ideas'
+
 
   # Read
-  get '/ideas/:id' => 'application#show'
-  get '/ideas' => 'application#index'
+  #get '/ideas/:id' => 'application#show', as: 'idea'
+  #get '/ideas' => 'application#index'
   
   # Update
-  get '/edit_idea/:id' => 'application#edit'
-  get '/update_idea/:id' => 'application#update'
+  #get '/edit_idea/:id' => 'application#edit'
+  #get '/ideas/:id/edit' => 'application#edit'
+  #get '/update_idea/:id' => 'application#update'
+  #patch '/ideas/:id' => 'application#update'
   
   # Destroy
-  get '/ideas/:id/destroy' => 'application#destroy'
+  #get '/ideas/:id/destroy' => 'application#destroy'
+  #delete '/ideas/:id' => 'application#destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

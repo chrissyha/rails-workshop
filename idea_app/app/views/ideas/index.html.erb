@@ -1,0 +1,6 @@
+<% @ideas.each do |idea| %> 
+	<div>
+	<%= idea.description %> |
+	<a href="/ideas/<%= idea.id %>">show</a>
+	</div>
+<% end %>

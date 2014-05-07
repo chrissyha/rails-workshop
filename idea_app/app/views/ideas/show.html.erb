@@ -1,0 +1,6 @@
+<h1>Idea #<%= @idea.id %></h1>
+
+<p>Description: <%= @idea.description%></p>
+
+<a href="/ideas/<%= @idea.id %>/edit">edit</a>
+<%= link_to "delete", @idea, :method => :delete %>

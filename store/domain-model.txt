@@ -1,0 +1,13 @@
+Vacation
+	name:string
+	price:float
+	description:text
+	image_url:string
+
+Cart
+	total:float
+
+User
+	name:string
+	email:string
+	

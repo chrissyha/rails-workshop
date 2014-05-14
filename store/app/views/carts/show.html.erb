@@ -5,5 +5,11 @@
   <%= @cart.total %>
 </p>
 
+<ul>
+<% @cart.vacations.each do |vacation| %>
+  <li><a href="/vacations/<%= vacation.id %>"><%= vacation.name %></a> - <%= vacation.price %></li>
+<% end %>
+</ul>
+
 <%= link_to 'Edit', edit_cart_path(@cart) %> |
 <%= link_to 'Back', carts_path %>

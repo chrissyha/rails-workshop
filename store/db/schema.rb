@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140513232747) do
+ActiveRecord::Schema.define(version: 20140513233941) do
 
   create_table "carts", force: true do |t|
     t.float    "total"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20140513232747) do
     t.string   "image_url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "cart_id"
   end
 
 end

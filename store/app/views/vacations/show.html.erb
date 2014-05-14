@@ -20,5 +20,10 @@
   <%= @vacation.image_url %>
 </p>
 
+<p>
+  <strong>Cart:</strong>
+  <%= @vacation.cart.total %>
+</p>
+
 <%= link_to 'Edit', edit_vacation_path(@vacation) %> |
 <%= link_to 'Back', vacations_path %>

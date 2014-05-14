@@ -1,0 +1,29 @@
+<h1>Listing vacation_carts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Vacation</th>
+      <th>Cart</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vacation_carts.each do |vacation_cart| %>
+      <tr>
+        <td><%= vacation_cart.vacation_id %></td>
+        <td><%= vacation_cart.cart_id %></td>
+        <td><%= link_to 'Show', vacation_cart %></td>
+        <td><%= link_to 'Edit', edit_vacation_cart_path(vacation_cart) %></td>
+        <td><%= link_to 'Destroy', vacation_cart, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vacation cart', new_vacation_cart_path %>

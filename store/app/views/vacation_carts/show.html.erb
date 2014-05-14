@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Vacation:</strong>
+  <%= @vacation_cart.vacation_id %>
+</p>
+
+<p>
+  <strong>Cart:</strong>
+  <%= @vacation_cart.cart_id %>
+</p>
+
+<%= link_to 'Edit', edit_vacation_cart_path(@vacation_cart) %> |
+<%= link_to 'Back', vacation_carts_path %>

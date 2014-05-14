@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140513233941) do
+ActiveRecord::Schema.define(version: 20140514001859) do
 
   create_table "carts", force: true do |t|
     t.float    "total"
@@ -22,6 +22,13 @@ ActiveRecord::Schema.define(version: 20140513233941) do
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "vacation_carts", force: true do |t|
+    t.integer  "vacation_id"
+    t.integer  "cart_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

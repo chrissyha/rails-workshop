@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Store</title>
+  <title>Cookies</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<nav>
-  <% if session['user_id'] %>
-  <% @u = User.find_by_id(session['user_id']) %>
-  Logged in as <%= @u.name %>
-  	|
-  <a href="/logout">logout</a>
-  <% else %>
-  <a href="/login">login</a>
-  <% end %>
-</nav>
 
 <%= yield %>
 

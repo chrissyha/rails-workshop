@@ -1,3 +1,4 @@
 class Vacation < ActiveRecord::Base
-  belongs_to :cart
+  has_many :vacation_carts
+  has_many :carts, :through => :vacation_carts
 end

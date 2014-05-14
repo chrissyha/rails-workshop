@@ -20,10 +20,12 @@
   <%= @vacation.image_url %>
 </p>
 
-<p>
-  <strong>Cart:</strong>
-  <%= @vacation.cart.total %>
-</p>
+<p><strong>Cart:</strong></p>
+  <ul>
+  <% @vacation.carts.each do |cart| %>
+  <li><a href="/carts/<%= cart.id %>"><%= cart.id %></a> - <%= cart.total %></li>
+  <% end %>
+  </ul>
 
 <%= link_to 'Edit', edit_vacation_path(@vacation) %> |
 <%= link_to 'Back', vacations_path %>

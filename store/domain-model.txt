@@ -4,6 +4,10 @@ Vacation
 	description:text
 	image_url:string
 
+VacationCart
+	vacation_id:integer
+	cart_id:integer
+
 Cart
 	total:float
 

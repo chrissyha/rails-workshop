@@ -1,0 +1,25 @@
+<%= form_for(@vacation_cart) do |f| %>
+  <% if @vacation_cart.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vacation_cart.errors.count, "error") %> prohibited this vacation_cart from being saved:</h2>
+
+      <ul>
+      <% @vacation_cart.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :vacation_id %><br>
+    <%= f.number_field :vacation_id %>
+  </div>
+  <div class="field">
+    <%= f.label :cart_id %><br>
+    <%= f.number_field :cart_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

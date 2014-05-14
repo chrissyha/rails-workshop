@@ -1,15 +1,7 @@
-Store::Application.routes.draw do
+Cookies::Application.routes.draw do
   get '/login' => 'sessions#new'
   get '/sessions/create' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
-
-  resources :vacation_carts
-
-  resources :users
-
-  resources :carts
-
-  resources :vacations
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

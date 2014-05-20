@@ -1,6 +1,6 @@
 Installing Ruby (2.0.0) on Rails (4.0.0) in Windows environment
 
-1. Go to http://rubyinstaller.org/downloads/. Download and install 'Ruby 2.0.0-p451' if 32-bit or 'Ruby 2.0.0-p451 (x64) 
+1. Go to http://rubyinstaller.org/downloads/. Download and install 'Ruby 2.0.0-p481' if 32-bit or 'Ruby 2.0.0-p481 (x64) 
 if 64-bit. To check if your system type is 32-bit or 64-bit, right click 'Computer' and click 'Properties.' Make sure you 
 check 'Add Ruby executables to your PATH' in the installation instructions.
 
